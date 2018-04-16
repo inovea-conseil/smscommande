@@ -1,0 +1,73 @@
+# SMS Commande - Send SMS since FICHINTER card
+# Copyright (C) 2017       Inovea-conseil.com     <info@inovea-conseil.com>
+#
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module432412Name = Order SMS
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module432412Desc = Sending SMS to customers from the order card (depending on the order status)
+
+RightsSMSC=Send SMS from the Order card
+
+
+#
+# Admin page
+#
+MyModuleSetup = Module setup
+Settings = Settings
+smsCommandeSetup = Order SMS setup
+smsCommandeSetupPage = Specify here the connection parameters to the OVH API (You can generate API access on <a href="https://api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&PUT=/sms/*&DELETE=/sms/*&POST=/sms/*" target="_blank">this page</a>).
+
+SMSINTERVENTION_APPLICATION_KEY = Application key
+SMSINTERVENTION_APPLICATION_SECRET = Application secret
+SMSINTERVENTION_CONSUMER_KEY = Consumer key
+
+SMS_CONNEXION_FAILED = Error connecting to your SMS account
+SMS_CREDIT_EMPTY = Your SMS account credit is empty
+SMS_ERROR_DESTINATAIRE = Recipient number format incorrect
+
+#
+# ContentSMS Page
+#
+smsCommandeContentSetup = Change SMS content
+smsCommandeContentSetupPage = Change the content of the SMS according to the status of the orders
+ContentSMS = SMS Content
+CommandeStatus = Intervention Status
+help = help
+helpSMSContentDesc = You can include the following variables in your SMS : <ul><li><b>_REFCMDE_</b> : Order ID.</li><li><b>_REFCLT_</b> : Customer ID.</li></ul>
+character = Character(s)
+
+#
+# History
+#
+smsCommandeHistory = SMS History
+PhoneShort = Phone
+DateCreationShort = Date send
+StatusSMS = Status
+Order = Order
+
+#
+# Affichage Bouton Envoyer
+#
+SEND_SMS = Send SMS
+SMS_CONSTANTE_EMPTY =The connection parameters are empty
+SMS_CONTENT_EMPTY = No content for this status
+SMS_NO_MOBILE = No mobile phone number defined
+SMS_MODAL_TITLE = Sending SMS
+SMS_MODAL_DESCRIPTION = Do you really want to send an SMS to this customer?
+SMS_CANCEL_BTN = Cancel
+
+#
+# Envoi du SMS
+#
+SMS_FICHINTER_TYPE = device
+SMS_SEND = SMS Sent
+SMS_SEND_FAILED = Failed to send SMS
+SMS_STILL_SEND = An SMS has already been sent
+
